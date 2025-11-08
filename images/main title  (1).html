@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+  <style>
+  *{
+    margin: 0;
+  }
+  .about{
+    padding: 20px;
+    position: relative;
+  }
+  img{
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+
+  }
+  
+  .main-heading {
+  text-align: center;
+}
+.main-heading h2 {
+  font-weight: normal;
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+}
+.main-heading h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  background-color: #333;
+  bottom: -30px;
+  width: 120px;
+}
+.main-heading h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  bottom: -38px;
+  background-color: white;
+}
+.main-heading p {
+  width: 550px;
+  margin: 0 auto 100px;
+  max-width: 100%;
+  line-height: 2;
+  color: #777;
+}
+  .about2{
+    position: relative;
+    padding: 20px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("stats.png")
+  }
+  .about2::before{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-color: rgba(0,0,0,0.8);
+  }
+  .about2 .text{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #144c69;
+    color: white;
+    z-index: 1;
+  }
+  .about2 .text .con{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about2 .text .con div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about2 .text .con div h1{
+    font-size: 50px;
+    font-weight: 900;
+  }
+  .about2 .text .con div h5{
+    padding-top: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+  }
+   .about2 .text .con div:first-child{
+     border-bottom: 1px solid black;
+   }
+    .about2 .text .con div:last-child{
+      border-top: 1px solid black;
+    }
+  .test-skills{
+   padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .test-skills .container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+  }
+  .test-skills .test{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .test-skills .test img{
+    height: 100px;
+    border-radius: 50%;
+  }
+    .test-skills .test .content{
+    text-align: center;
+      margin-bottom: 10px;
+      position: relative;
+      
+  }
+  .test-skills .test .content::after{
+    position: absolute;
+    content: "";
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background-color: #ccc;
+  }
+  .test-skills .test .content p{
+    text-align: center;
+    max-width: 100%;
+    padding: 10px;
+  }
+.test-skills .skills{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+    
+  .test-skills .skills .progress{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .test-skills .skills .progress .all{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    height: 30px;
+    background-color: #ccc;
+    position: relative;
+  }
+    .test-skills .skills .progress .all .inline{
+      height: 100%;
+      background-color: #19c8fa;
+      
+  }
+  .test-skills .skills .progress .all .inline span{
+    position: absolute;
+    display: block;
+    width: fit-content;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  label{
+    font-size: 19px;
+  }
+  .quote{
+    padding: 50px 10px 50px 10px;
+    background-image: url("quote.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+  }
+  .quote::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    background-color: rgba(0,0,0,0.8);
+  }
+  .quote q{
+    font-size: 30px;
+    z-index: 1;
+    
+  }
+  .quote h4{
+    font-weight: normal;
+    margin-top: 20px;
+   z-index: 1;
+  }
+  
+  </style>
+</head>
+<body>
+  <div class="about">
+<div class="main-heading">
+          <h2>About</h2>
+          <p>
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+            tincidunt.
+          </p>
+        </div>
+<img src="about.png">
+  </div>
+ 
+  <div class="test-skills">
+    <div class="container">
+      <div class="test">
+        <div class="main-heading">
+          <h2>Testimonials</h2>
+          <p>
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+            tincidunt.
+          </p>
+        </div>
+        <div class="content" style="margin-top: -40px;">
+          <img src="skills-01.jpg">
+          <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+            elit, eget tincidunt.</p>
+            <p style="color: #777;">John Doe, CEO</p>
+        </div>
+                 <div class="content">
+          <img src="skills-02.jpg">
+          <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+            elit, eget tincidunt.</p>
+           <p style="color: #777;">John Doe, CEO</p>
+        </div>
+      </div>
+      
+       <div class="skills">
+        <div class="main-heading">
+          <h2>Skills</h2>
+          <p>
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+            tincidunt.
+          </p>
+        </div>
+
+  <div class="progress" style="margin-top: -40px;">
+          <label>Html</label>
+    <div class="all">
+      <div class="inline" style="width: 90%;">
+        <span>90%</span>
+      </div>
+    </div>
+          <label>Css</label>
+      <div class="all">
+      <div class="inline" style="width: 85%;">
+        <span>85%</span>
+      </div>
+    </div>
+    <label>Java script</label>
+      <div class="all">
+      <div class="inline" style="width: 80%;">
+        <span>80%</span>
+      </div>
+    </div>
+<label>Bootstrap</label>
+      <div class="all">
+      <div class="inline"style="width: 90%;">
+        <span>90%</span>
+      </div>
+    </div>
+    </div>
+  </div>
+       </div>
+  
+    <div class="quote">
+      <q>
+        accumsan id imperdiet et, 
+        porttitor at sem. Mauris blandit
+        aliquet elit, eget tincidunt.
+      </q>
+      <h4>Jhon Doe</h4>
+      
+    </div>
+  
+</body>
+</html>
